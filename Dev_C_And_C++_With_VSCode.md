@@ -12,19 +12,19 @@
 
 Il est nécéssaire d'**installer les extensions** ci-dessous.
 
-![img_1](_img/003.png)
+![img](_img/003.png)
 
 *=> L'extension C/C++*
 
-![img_1](_img/004.png)
+![img](_img/004.png)
 
 *=> L'extension C/C++ Extension Pack*
 
-![img_1](_img/005.png)
+![img](_img/005.png)
 
 *=> L'extension C/C++ Themes*
 
-![img_1](_img/006.png)
+![img](_img/006.png)
 
 *=> L'extension Code Runner*
 
@@ -34,10 +34,10 @@ Il est nécéssaire d'**installer les extensions** ci-dessous.
 
 Il suffit ensuite de cliquer sur **Run Code**.
 
-![img_1](_img/007.png)
+![img](_img/007.png)
 
 Voici un exemple de résultat obtenable ci-dessous.
 
-![img_1](_img/008.png)
+![img](_img/008.png)
 
 Voilà, tout est prêt pour exécuter du code C/C++ sur Visual Studio Code.
