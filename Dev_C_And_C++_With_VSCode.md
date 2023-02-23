@@ -6,7 +6,7 @@
 > 
 > Il est nécessaire d'avoir compilateur C/C++ d'installer. 
 > 
-> Un guide est disponible [ici](../../Dev_C_And_C++_Install_GCC.md).
+> Un guide est disponible [ici](/blob/main/Dev_C_And_C++_Install_GCC.md).
 
 ## Etape 1
 
