@@ -1,12 +1,12 @@
 [Retour](../../)
 
-# Installer le compilateur GCC pour compiler du code C
+# Installer le compilateur GCC pour compiler du code C sur Linux, Windows et MacOS
 
-## Qu'est-ce que GCC ?
+## 1 - Qu'est-ce que GCC ?
 
 **GCC** est un compilateur de code de [GNU Compiler Collection](https://fr.wikipedia.org/wiki/GNU_Compiler_Collection) capable de compiler du **C** dans sa version **12.2**.
 
-## Vérifier l'installation du compilateur GCC
+## 2 - Vérifier l'installation du compilateur GCC
 
 Comme il est probable que vous votre environnement le possède déjà, il est nécessaire de vérifier la présence du compilateur de GCC dans votre environement.
 
@@ -18,7 +18,11 @@ gcc -v
 
 ### Sur Linux
 
-**[EN COURS]**
+Testé sur **Ubuntu 22.04**, il suffit d'effectué la commande ci-dessous pour installer le compilateur **GCC**.
+
+```
+sudo atp install gcc
+```
 
 ### Sur MacOS
 
@@ -38,7 +42,7 @@ Thread model: win32
 gcc version 6.3.0 (MinGW.org GCC-6.3.0-1)
 ```
 
-## Installer le compilateur GCC
+## 3 - Installer le compilateur GCC
 
 ### Pour Linux
 

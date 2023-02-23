@@ -1,3 +1,10 @@
-.vs
-.vscode
+# For Visual Studio 2017
 x64
+.vs
+
+# For Visual Studio Code
+.vscode
+
+# Compilations
+*.exe
+*.out
