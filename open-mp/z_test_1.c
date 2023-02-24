@@ -1,31 +1,25 @@
+#include <unistd.h>
+#include <sys/wait.h>
+#include <sys/types.h>
 #include <stdio.h>
-#include <omp.h>
+#include <stdlib.h>
 
-// Partie : Travailler avec des boucles
-
-#define MAX 5
-
-void modelOne(){
-    int i, j, A[MAX];
-    j = 5;
-    for(i=0; i<MAX; i++){
-        j += 2;
-        A[i] = big(j);
-    }
-    printf("modelOne - A:(%d)\n", A);
-}
-
-void modelTwo(){
-    int i, A[MAX];
-    #pragma omp parallel for
-    for(i=0; i<MAX; i++){
-        int j = 5+2*(i+1);
-        A[i] = big(j);
-    }
-    printf("modelTwo - A:(%d)\n", A);
-}
-
-void main(){
-    modelOne();
-    modelTwo();
+int main(){
+	int pid, status;
+	pid = fork();
+	switch (pid) {
+		case -1 :
+			printf("le fork a echoue");
+			break;
+		case 0:
+			printf(" je suis le fils, monpid = %d et le pid de mon pere = %d\n", getpid(), getppid());
+			exit(20);
+			break; 
+		default:
+			printf(" je suis le pere, monpid = %d et le pid de mon fils = %d et le gd pere = %d\n", getpid(), pid, getppid()); 
+			wait(&status);
+			printf("valeur retournee par mon fils = %d\n", WEXITSTATUS(status));
+			break; 
+	}
+	return 0;
 }

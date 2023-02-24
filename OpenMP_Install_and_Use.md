@@ -42,19 +42,19 @@ Bien entendu, celui-ci est privé mais il est basé sur ce document officiel de 
 
 ### TP 1 - Programme 1 - Hello World
 
-Compilation du petit programme **Hello World** dans le fichier `tp1_prog1.c`.
+Compilation du petit programme **Hello World** dans le fichier `test1.c`.
 
 Compilation / Résultat / Exécution / Résultat
 
 ```
 cd esiee_2023_prog_para_sys_emb/
-gcc -fopenmp tp1_prog1.c -o tp1_prog1.out
+gcc -fopenmp test1.c -o test1.out
 
 tree
-tp1_prog1.c  tp1_prog1.out
+test1.c  test1.out
 
 export OMP_NUM_THREADS=4
-./tp1_prog1.out
+./test1.out
 
 hello(3)world(3) 
 hello(0)world(0) 
@@ -71,46 +71,46 @@ hello(2)world(2)
 Programmation des fonctions mathématiques en **C**.
 
 ```
-gcc -fopenmp tp1_prog2.c -o tp1_prog2.out && tree && ./tp1_prog2.out
+gcc -fopenmp test5_1_Exercice2.c -o test5_1_Exercice2.out && tree && ./test5_1_Exercice2.out
 ```
 
-> `tp1_prog2.c` : ok ✔
+> `test5_1_Exercice2.c` : ok ✔
 
 Correction
 
 ```
-gcc -fopenmp tp1_prog3.c -o tp1_prog3.out && tree && ./tp1_prog3.out
+gcc -fopenmp test5_2_Exercice2_Correction.c -o test5_2_Exercice2_Correction.out && tree && ./test5_2_Exercice2_Correction.out
 ```
 
-> `tp1_prog3.c` : ok ✔
+> `test5_2_Exercice2_Correction.c` : ok ✔
 
 #### Partie 2
 
 Mise en parallèle du programme.
 
 ```
-gcc -fopenmp tp1_prog4.c -o tp1_prog4.out && tree && ./tp1_prog4.out
+gcc -fopenmp test9_1_Exercice3.c -o test9_1_Exercice3.out && tree && ./test9_1_Exercice3.out
 ```
 
-> `tp1_prog4.c` : ok ✔
+> `test9_1_Exercice3.c` : ok ✔
 
 Correction
 
 ```
-gcc -fopenmp tp1_prog5.c -o tp1_prog5.out && tree && ./tp1_prog5.out
+gcc -fopenmp test5_4_Exercice2_parallel_Correction.c -o test5_4_Exercice2_parallel_Correction.out && tree && ./test5_4_Exercice2_parallel_Correction.out
 ```
 
-> `tp1_prog5.c` : ok ✔
+> `test5_4_Exercice2_parallel_Correction.c` : ok ✔
 
 ### TP 1 - Programme 3
 
 ▶ les fork
 
 ```
-gcc -fopenmp tp1_prog6.c -o tp1_prog6.out
+gcc -fopenmp z_test_1.c -o z_test_1.out
 tree
-tp1_prog6.c  tp1_prog6.out
-./tp1_prog6.out
+z_test_1.c  z_test_1.out
+./z_test_1.out
 
  je suis le pere, monpid = 3374 et le pid de mon fils = 3375 et le gd pere = 2507
  je suis le fils, monpid = 3375 et le pid de mon pere = 3374
@@ -119,33 +119,39 @@ valeur retournee par mon fils = 20
 
 ### TP 1 - Programme 4
 
-Mise en parallèle du programme `tp1_prog7.c` avec réduction.
+Mise en parallèle du programme `test9_2_Exercice3_Correction.c` avec réduction.
 
 ```
-gcc -fopenmp tp1_prog7.c -o tp1_prog7.out && tree && ./tp1_prog7.out
+gcc -fopenmp test9_1_Exercice3.c -o test9_1_Exercice3.out && tree && ./test9_1_Exercice3.out
 ```
 
-> `tp1_prog7.c` : ok ✔
+> `test9_1_Exercice3.c` : ok ✔
+
+```
+gcc -fopenmp test9_2_Exercice3_Correction.c -o test9_2_Exercice3_Correction.out && tree && ./test9_2_Exercice3_Correction.out
+```
+
+> `test9_2_Exercice3_Correction.c` : ok ✔
 
 ### TP 2 - Programme 1
 
 Superficie de l'ensemble de Mandelbrot :
 - [wiki](https://fr.wikipedia.org/wiki/Ensemble_de_Mandelbrot)
-- Programme parallèle : `tp2_prog1.c`.
+- Programme parallèle : `z_test_0.c`.
 
 ```
-gcc -fopenmp tp2_prog1.c -o tp2_prog1.out && ls | grep 'tp2_prog1.out' && ./tp2_prog1.out
+gcc -fopenmp z_test_0.c -o z_test_0.out && ls | grep 'z_test_0.out' && ./z_test_0.out
 ```
 
-> `tp2_prog1.c` : ok ✔
+> `z_test_0.c` : ok ✔
 
 ### Bonus - Programme 1 - Travailler avec des boucles
 
 ```
-gcc -fopenmp z_test_1.c -o z_test_1.out && tree && ./z_test_1.out
+gcc -fopenmp z_test_2.c -o z_test_2.out && tree && ./z_test_2.out
 ```
 
-> `z_test_1.c` : presques 😅
+> `z_test_2.c` : presques 😅
 
 ## Nettoyer toutes les compilations
 
