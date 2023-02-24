@@ -8,3 +8,4 @@ x64
 # Compilations
 *.exe
 *.out
+*_exe
