@@ -4,10 +4,11 @@
 
 /*
  * Desciption :
- *    Ce programme est un petit programme de test avec MPI.
- *    Il permet d'effectuer sendrecv.c
+ * 		Ce programme est un petit programme de test avec MPI
+ *      ==>  sendrecv.c
+ *      Il permet d'effectuer [...]
  * Résultat :
- *    Il affiche :
+ * 		Il affiche :
  *          Moi, processus 0, j’ai recu 1001 du processus 1.
  *          Moi, processus 1, j’ai recu 1000 du processus 0.
  */
