@@ -1,6 +1,6 @@
 # ESIEE-IT 2023 - Programme parallèle et système distribué
 
-> 🚨 **Projet déplacer ici ▶▶ : [https://github.com/2023-esiee-projectlab/esiee-it_2023_prog_para_sys_dist_tests](https://github.com/2023-esiee-projectlab/esiee-it_2023_prog_para_sys_dist_tests)**
+> 🚨 **Projet déplacer ici ▶▶ : [https://github.com/2023-esiee-projectlab/M2_prog_para_sys_dist_tests](https://github.com/2023-esiee-projectlab/M2_prog_para_sys_dist_tests)**
 
 Mise en application d'un cours de programme parallèle et système distribué avec [OpenMP](https://fr.wikipedia.org/wiki/OpenMP) et [MPI](https://fr.wikipedia.org/wiki/MPI).
  
